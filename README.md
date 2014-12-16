@@ -1,9 +1,9 @@
-Treasure cube [voxelcube]
-=========================
+The Cube minigame [thecube]
+===========================
 
 (https://forum.minetest.net/viewtopic.php?f=9&t=10609)
 
-**Treasure cube is a mini game for Minetest.**
+**The cube is a mini game for Minetest.**
 
 It generates giant (or mini) dirt/stone/glass/sand cubes with hidden treasures (bronze blocks) hidden inside !
 There is also the possibility to hide a Golden Snitch along with the bronze blocks.
@@ -32,7 +32,7 @@ HOWTO :
 
 Privs :
 -------
-voxelcube
+thecube
 
 Depends :
 ---------
@@ -44,8 +44,8 @@ lgpl 2.1
 
 Download :
 ----------
-https://github.com/indriApollo/voxelcub ... master.zip
+https://github.com/indriApollo/thecube/archive/master.zip
 
 Installation:
 -------------
-Unzip the file and rename it to "voxelcube". Then move it to the mod directory.
+Unzip the file and rename it to "thecube". Then move it to the mod directory.
