@@ -55,7 +55,7 @@ minetest.register_chatcommand("cube", {
 			minetest.log("info","[thecube] Missing parameter undo | do !")
 			return false, "[thecube] Missing parameter undo | do !"
 		elseif params[1] == "undo" then
-			local retval ,errmsg = thecube.restoreTerrain()
+			local retval ,errmsg = thecube.restoreTerrain("thecube_save")
 			return retval, errmsg
 			-- exit function after undo
 		elseif params[1] ~= "do" then

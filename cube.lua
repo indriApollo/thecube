@@ -44,7 +44,7 @@ thecube.placeCube = function(playerpos,facedir,cube_size,nrandom,nodename,golden
 	local area = VoxelArea:new({MinEdge=emerged_pos1, MaxEdge=emerged_pos2})
 	local nodes = manip:get_data()
 
-	thecube.dumpNodesToFile(nodes,pos1,pos2) -- the old nodes are saved
+	thecube.saveNodesToFile(nodes,pos1,pos2,"thecube_save") -- the old nodes are saved
 
 	local id = minetest.get_content_id("thecube:"..nodename)
 	nrandom_id = minetest.get_content_id("thecube:bronzeblock")
