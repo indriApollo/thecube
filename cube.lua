@@ -36,7 +36,7 @@ thecube.placeCube = function(playerpos,facedir,cube_size,nrandom,nodename,golden
 		pos1 = {x=playerpos.x-cube_size-1, y=playerpos.y, z=playerpos.z}
 	end
 	pos1 = vector.round(pos1)
-	pos2 = vector.add(pos1,cube_size) --{x=pos1.x+cube_size, y=pos1.y+cube_size, z=pos1.z+cube_size} -- pos2 is the top right corner
+	pos2 = vector.add(pos1,cube_size) -- pos2 is the top right corner
 	local volume = math.pow(cube_size+1,3)
 
 	local manip = minetest.get_voxel_manip()

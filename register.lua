@@ -1,26 +1,26 @@
 
 -- nodes
 
-local dirtNode = minetest.registered_nodes["default:dirt"]
+local dirtNode = thecube.copy_table(minetest.registered_nodes["default:dirt"]) -- copy table to add stuff
 dirtNode.description = "cube dirt"
 dirtNode.is_ground_content = false -- to avoid caves and trees
 minetest.register_node("thecube:dirt",dirtNode)
 
-local stoneNode = minetest.registered_nodes["default:stone"]
+local stoneNode = thecube.copy_table(minetest.registered_nodes["default:stone"]) -- copy table to add stuff
 stoneNode.description = "cube stone"
 stoneNode.is_ground_content = false -- to avoid caves and trees
 minetest.register_node("thecube:stone",stoneNode)
 
-local sandNode = minetest.registered_nodes["default:sand"]
+local sandNode = thecube.copy_table(minetest.registered_nodes["default:sand"]) -- copy table to add stuff
 sandNode.description = "cube sand"
 sandNode.is_ground_content = false -- to avoid caves and trees
 minetest.register_node("thecube:sand",sandNode)
 
-local glassNode = minetest.registered_nodes["default:glass"]
+local glassNode = thecube.copy_table(minetest.registered_nodes["default:glass"]) -- copy table to add stuff
 glassNode.description = "cube glass"
 minetest.register_node("thecube:glass",glassNode)
 
-local bronzeNode = minetest.registered_nodes["default:bronzeblock"]
+local bronzeNode = thecube.copy_table(minetest.registered_nodes["default:bronzeblock"]) -- copy table to add stuff
 bronzeNode.description = "cube bronze"
 bronzeNode.is_ground_content = false -- to avoid caves and trees
 minetest.register_node("thecube:bronzeblock",bronzeNode)
