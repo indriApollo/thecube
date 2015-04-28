@@ -42,10 +42,6 @@ Licence :
 ---------
 lgpl 2.1
 
-Download :
-----------
-https://github.com/indriApollo/thecube/archive/master.zip
-
 Installation:
 -------------
 Unzip the file and rename it to "thecube". Then move it to the mod directory.
