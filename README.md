@@ -20,7 +20,11 @@ Hope you'll enjoy this mod :D
 
 HOWTO :
 -------
-```/cube undo | do <size> <#ores> <dirt|stone|sand|glass> [1]```
+
+```
+/cube undo | do <size> <#ores> <dirt|stone|sand|glass> [1]
+```
+
 - undo : restore the nodes changed by the latest cube (clean up after game or revert accidental griefing)
 - do : generate cube with following parameters
 - size : give the border lenght of the cube, final cube will be size^3 (min 3)
