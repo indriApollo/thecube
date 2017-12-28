@@ -2,7 +2,7 @@
 --restore functions
 
 thecube.saveNodesToFile = function(nodes,pos1,pos2,file_name)
-	local save_file = io.open(thecube.mod_path.."/"..file_name, "w")
+	local save_file = io.open(thecube.world_path.."/"..file_name, "w")
 	local save_content = {pos1=pos1,pos2=pos2,nodenames={}}
 	for i,v in ipairs(nodes) do
 		save_content.nodenames[i] = minetest.get_name_from_content_id(v)
@@ -12,7 +12,7 @@ thecube.saveNodesToFile = function(nodes,pos1,pos2,file_name)
 end
 
 thecube.restoreTerrain = function(file_name)
-	local save_file = io.open(thecube.mod_path.."/"..file_name, "r")
+	local save_file = io.open(thecube.world_path.."/"..file_name, "r")
 	if not save_file then -- no file, nothing to undo
 		minetest.log("info","["..thecube.mod_name.."] Nothing to undo.")
 		return false, "["..thecube.mod_name.."] Nothing to undo."
@@ -42,6 +42,6 @@ thecube.restoreTerrain = function(file_name)
 	manip:update_map()
 
 	io.close(save_file)
-	os.remove(thecube.mod_path.."/"..file_name)
+	os.remove(thecube.world_path.."/"..file_name)
 	return true, "["..thecube.mod_name.."] undo successful."
 end

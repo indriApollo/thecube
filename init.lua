@@ -4,6 +4,7 @@ thecube = {}
 
 thecube.mod_name = minetest.get_current_modname()
 thecube.mod_path = minetest.get_modpath(thecube.mod_name)
+thecube.world_path = minetest.get_worldpath()
 
 local mod_name = thecube.mod_name
 local mod_path = thecube.mod_path

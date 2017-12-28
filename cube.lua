@@ -47,8 +47,8 @@ thecube.placeCube = function(playerpos,facedir,cube_size,nrandom,nodename,golden
 	thecube.saveNodesToFile(nodes,pos1,pos2,"thecube_save") -- the old nodes are saved
 
 	local id = minetest.get_content_id("thecube:"..nodename)
-	nrandom_id = minetest.get_content_id("thecube:bronzeblock")
-	goldensnitch_id = minetest.get_content_id("thecube:goldensnitch")
+	local nrandom_id = minetest.get_content_id("thecube:bronzeblock")
+	local goldensnitch_id = minetest.get_content_id("thecube:goldensnitch")
 	local interval = thecube.round(volume / nrandom) -- volume/nr wanted ores
 	local maxrandom = interval
 	local minrandom = 1
